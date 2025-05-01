@@ -4,6 +4,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: lightgray;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 .container{
     position: relative;
     width: 100%;
@@ -626,17 +632,170 @@ header ul a{
 
 
 
+/* Contact Section */
+
+.contact-section{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+    
+}
+
+.contact-section h1{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+
+}
+
+.social-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.social-box a{
+    color: lightgray;
+    text-decoration: none;
+    font-size: 20px;
+    text-wrap: nowrap;
+}
+
+.social-box i{
+    color: #727fde;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+.social-icons a i{
+    color: lightgray;
+    margin-top: 40px;
+}
+
+.contact-box p{
+    max-width: 400px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+
+.contact-box input{
+    padding: 7.5px 30px;
+    background-color: lightgray;
+    width: 80%;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-box button{
+    margin-top: 30px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #727fdeb4;
+    background-color: #2200493d;
+    transition: 0.3s;
+
+}
+.contact-box button:hover{
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+}
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.138);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.382);
+    z-index: 999;
+}
+footer h1{
+    font-size: 27px;
+}
+
+/* Blur effects */
+.autoBlur{
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+
+@keyframes  autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+    35%, 65%{
+        filter: blur(0);
+        opacity: 1;
+        
+    }
+    100%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+}
 
 
 
+/* Auto display animation */
+.autoDisplay{
+    animation: autoDisplayAnimation both;
+    animation-timeline: view();
+}
+
+@keyframes  autoDisplayAnimation{
+    from{
+        filter: blur(10px);
+        transform: translateY(-200px) scale(0);
+        opacity: 0.2;
+    }
+    50%{
+        filter: blur(0);
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
 
 
+/* Fade in right */
+.fadeInRight{
+    animation: fadeInRightAnimation both;
+    animation-timeline: view();
+}
 
+@keyframes  fadeInRightAnimation{
+    0%{
+        opacity: 0;
+        transform: translateX(-500px) scale(0.2);
+        filter: blur(20px);
+    }
+    35%, 65%{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+        filter: blur(0);
+        
+    }
+    100%{
+        filter: blur(20px);
+    }
 
-
-
-
-
+}
 
 
 

@@ -33,7 +33,7 @@
             <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
         </div>
         <section class="hero">
-            <div class="hero-info">
+            <div class="hero-info autoBlur">
                 <div class="hero-info-title">
                     <i class='bx bxl-sketch' ></i>
                     Soumyajit Banerjee
@@ -46,14 +46,14 @@
             </div>
 
             <div class="hero-vid-box">
-                <video autoplay loop muted plays-inline src="videos/hero-video.mp4" type="video/mp4"></video>
+                <video class="autoBlur" autoplay loop muted plays-inline src="videos/hero-video.mp4" type="video/mp4"></video>
             </div>
             <div class="scroll-down">
             </div>
         </section>
 
         <section class="info-section">
-            <h1 class="section-title">
+            <h1 class="section-title autoDisplay">
                 Hello, There<picture>
                     <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.webp" type="image/webp">
                     <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fb/512.gif" alt="👋" width="32" height="32">
@@ -85,19 +85,19 @@
         </section>
 
         <section class="my-projects">
-            <h1 class="section-title">My Projects <picture>
+            <h1 class="section-title autoDisplay">My Projects <picture>
                 <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.webp" type="image/webp">
                 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="32" height="32">
               </picture>
             </h1>
             <div class="project-card">
-                <div class="project-vidbox">
+                <div class="project-vidbox autoBlur">
                     <video id="projectVideo1" src="videos/project1.mp4"></video>
                     <div class="hover-sign">
 
                     </div>
                 </div>
-                <div class="project-info">
+                <div class="project-info fadeInRight">
                     <h1>A Complete <span class="gradient">HotelBooking</span> and <span class="gradient">Management</span> Backend</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est corporis dolorem, natus molestias neque hic iure iusto accusantium enim qui iste maiores aut excepturi aliquam saepe dolorum ullam accusamus!</p>
                     <button><i class='bx bx-link-external' ></i>Link</button>
@@ -106,10 +106,10 @@
             </div>
 
             <div class="project-card">
-                <div class="project-vidbox">
+                <div class="project-vidbox autoBlur">
                     <video id="projectVideo2" src="videos/project2.mp4"></video>
                 </div>
-                <div class="project-info">
+                <div class="project-info fadeInRight">
                     <h1><span class="gradient">Nocturne IDE</span>, is a Ai powered online code editor</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est corporis dolorem, natus molestias neque hic iure iusto accusantium enim qui iste maiores aut excepturi aliquam saepe dolorum ullam accusamus!</p>
                     <button><i class='bx bx-link-external' ></i>Link</button>
@@ -118,10 +118,10 @@
             </div>
 
             <div class="project-card">
-                <div class="project-vidbox">
+                <div class="project-vidbox autoBlur">
                     <video id="projectVideo3" src="videos/project3.mp4"></video>
                 </div>
-                <div class="project-info">
+                <div class="project-info fadeInRight">
                     <h1><span class="gradient">Newsly</span>, A social based news blogging backend application</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est corporis dolorem, natus molestias neque hic iure iusto accusantium enim qui iste maiores aut excepturi aliquam saepe dolorum ullam accusamus!</p>
                     <button><i class='bx bx-link-external' ></i>Link</button>
@@ -131,7 +131,7 @@
         </section>
 
         <section class="skills-section">
-            <h1 class="section-title">My Skills <picture>
+            <h1 class="section-title autoDisplay">My Skills <picture>
                 <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.webp" type="image/webp">
                 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a1/512.gif" alt="💡" width="32" height="32">
               </picture>
@@ -139,7 +139,7 @@
             <div class="skills-box">
                 <img class="skills-image" src="images/digital brain.png" alt="skills-image">
 
-                <div class="DevOps">
+                <div class="DevOps autoDisplay">
                     <h1 class="gradient">DevOps <picture>
                         <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.webp" type="image/webp">
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="32" height="32">
@@ -147,7 +147,7 @@
                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae saepe unde minima soluta recusandae qui cumque a dolor illo?</p>
                 </div>
 
-                <div class="Backend-Developer">
+                <div class="Backend-Developer autoDisplay">
                     <h1 class="gradient">Backend Developer<picture>
                         <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1fa84/512.webp" type="image/webp">
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1fa84/512.gif" alt="🪄" width="32" height="32">
@@ -188,11 +188,41 @@
 
 
         <section class="contact-section">
-            <h1 class="section-title">Get in Touch <picture>
+            <h1 class="section-title autoDisplay">Get in Touch <picture>
                 <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f41d/512.webp" type="image/webp">
                 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f41d/512.gif" alt="🐝" width="32" height="32">
-              </picture></h1>
+              </picture>
+            </h1>
+            <div class="social-box autoBlur">
+                <a href="#"><i class='bx bxs-phone-call'></i>+91 7908288829</a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i>Contact Me</a>
+                <a href="#"><i class='bx bxl-telegram' ></i>Connect with me</a>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            
+
+            <div class="contact-box autoBlur">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus vel hic alias laudantium quisquam ab cupiditate obcaecati fugiat, sit omnis maxime voluptates, eaque, delectus magnam quae dignissimos aliquid sed ad!</p>
+                <p>Full Name</p>
+                <input type="text" placeholder="Your Full Name">
+                <p>Email Address</p>
+                <input type="text" placeholder="Your Email">
+                <p>Your Message</p>
+                <input class="input-message" type="text" placeholder="Share your thoughts">
+                <button><i class='bx bx-send' ></i>Send Message</button>
+            </div>
         </section>
+
+        <footer>
+            <h1>© 2025 <picture>
+                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.webp" type="image/webp">
+                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/512.gif" alt="❤" width="32" height="32">
+              </picture> Soumyajit Banerjee. All Rights Reserved.</h1>
+        </footer>
 
     </div>
 
