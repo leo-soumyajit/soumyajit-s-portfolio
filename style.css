@@ -75,8 +75,9 @@ header ul li{
 header ul a{
     text-decoration: none;
     color: white;
-    font-weight:900;
+    font-weight:bolder;
     margin: 0 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .box-icon{
@@ -288,7 +289,7 @@ header ul a{
 .card img{
     width: 80%;
     height: 50%;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -311,6 +312,7 @@ header ul a{
     color: grey;
     font-size: 13px;
     line-height: 20px;
+    text-align: justify;
     
 }
 
@@ -366,7 +368,11 @@ header ul a{
 .card:nth-child(4) h1{
     bottom: 35%;
 }
-
+.card:nth-child(4) img{
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
 
 /* My Projects */
 
@@ -441,6 +447,7 @@ header ul a{
     min-width: 300px;
     margin-bottom: 50px;
     margin-top: 0;
+    text-align: justify;
 
 }
 
@@ -557,6 +564,7 @@ header ul a{
 
 .skills-box p{
     line-height: 23px;
+    text-align: justify;
     
 }
 
@@ -1104,6 +1112,12 @@ footer h1{
     }
     .card p{
         font-size: ;
+    }
+    .card img{
+        width: 65%;
+        height: 40%;
+        object-fit: contain;
+    
     }
 
 }
