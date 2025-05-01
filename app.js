@@ -18,3 +18,8 @@ videoList.forEach(function(video){
         hoverSign.classList.remove("active")
     })
 })
+
+
+setTimeout(function() {
+    location.reload();
+}, 60000); // 60000 ms = 1 minute
