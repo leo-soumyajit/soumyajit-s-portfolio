@@ -36,3 +36,7 @@ close.addEventListener("click", function(){
 // setTimeout(function() {
 //     location.reload();
 // }, 60000); // 60000 ms = 1 minute
+window.addEventListener('load', () => {
+	const loader = document.getElementById('loader');
+	loader.classList.add('fade-out');
+});
