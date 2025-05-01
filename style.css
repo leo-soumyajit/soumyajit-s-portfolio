@@ -453,6 +453,7 @@ header ul a{
     transition: 0.3s;
     cursor: pointer;
     box-shadow: 0 0 5px #727fde86;
+    
 }
 
 .project-info button:hover{
@@ -729,6 +730,104 @@ footer h1{
     font-size: 27px;
 }
 
+.menu-icon{
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Sidebar */
+.sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 70%;
+    width: 0%;
+    background-color: #000000bc;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(211, 211, 211, 0.461);
+    border-bottom-left-radius: 100%;
+    opacity: 0;
+}
+
+.close-icon{
+    font-size: 50px;
+    color: lightgray;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.sidebar ul{
+    padding-left: 20px;
+}
+
+.sidebar ul li{
+    list-style: none;
+    margin-bottom: 30px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(128, 128, 128, 0.265);
+}
+
+
+.sidebar .social-icons{
+    padding-left: 20px;
+    margin-top: 60px;
+    text-wrap: nowrap;
+}
+
+.sidebar .social-icons a{
+    font-size: 35px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.sidebar.open-sidebar{
+    animation: openSidebar 1.5s forwards;
+}
+
+
+@keyframes openSidebar {
+    to{
+        width: 80%;
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
+
+
+/* close sidebar*/
+.sidebar.close-sidebar{
+    animation: closeSidebar 1.5s forwards;
+}
+
+
+@keyframes closeSidebar {
+    from{
+        width: 80%;
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    to{
+        width: 0;
+        opacity: 0;
+        bottom: 70%;
+        border-bottom-left-radius: 50%;
+
+    }
+}
+
+
+
+
+
+
 /* Blur effects */
 .autoBlur{
     animation: autoBlurAnimation linear both;
@@ -820,4 +919,191 @@ footer h1{
         height: auto;
         width: 100%;
     }
+}
+
+/* Tablets */
+
+@media screen and (max-width: 1000px){
+    .blackhole-box video{
+        margin-top: -20%;
+    }
+    .hero-info h1{
+        font-size: 40px;
+        max-width: 400px;
+        line-height: 40px;
+    }
+
+    .hero-info p{
+        max-width: 300px;
+    }
+    .hero-vid-box{
+        right: 0;
+    }
+    .hero-vid-box video{
+        height: 500px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+
+    .info-cards{
+        grid-template-columns: auto;
+    }
+    .card:nth-child(3){
+        grid-column: span 2;
+        height: 70vh;
+
+    }
+    .info-cards .card h1{
+        font-size: 20px;
+    }
+    .card:nth-child(3) h1{
+        bottom: 25%;
+    }
+    .card video{
+        height: 65%;
+        margin-top: 5%;
+    }
+
+    .my-projects{
+        margin-bottom: 300px;
+
+    }
+    .project-vidbox video{
+        width: 250px;
+        margin-left: -100px;
+    }
+    .project-info{
+        padding-left: 0;
+        margin-left: -50px
+    }
+    .project-info h1{
+        font-size: 20px;
+        max-width: 200px;
+        text-wrap: wrap;
+    }
+
+    .project-info p{
+        font-size: 10px;
+        max-width: 200px;
+        text-wrap: wrap;
+        min-width: 0;
+    }
+    footer h1{
+        font-size: 20px
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 700px){
+    header{
+        position: fixed;
+        height: 50px;
+    }
+    header ul{
+        display: none;
+
+    }
+    header .box-icon{
+        display: none;
+    }
+    header h1{
+        font-size: 25px;
+    }
+
+    .blackhole-box video{
+        margin-top: -16%;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .autoBlur{
+        animation: none;
+    }
+
+    .hero-info{
+        bottom: 5%;
+    }
+    .scroll-down{
+        bottom: 5%;
+    }
+    .hero-info h1{
+        line-height: 50px;
+    }
+    .hero-vid-box{
+        height: 200px;
+        top: 5%;
+        right: 5%;
+    }
+    .card video{
+        width: 100%;
+    }
+
+    .my-projects{
+        margin-bottom: 600px;
+    }
+    .project-card{
+        flex-direction: column;
+        margin-left: 25%;
+        gap: 30px;
+
+    }
+    .project-info{
+        width: 85%;
+    }
+
+    .project-info h1{
+        text-justify: auto;
+    }
+
+    .project-info p{
+        max-width: 300px;
+    }
+    .DevOps{
+        top: 15%;
+        left: 18%;
+    }
+    .Backend-Developer{
+        top:50%;
+        left: 18%
+    }
+    .skills-box h1{
+        margin-bottom: 0;
+        margin-top: 70px;
+
+    }
+    .slider{
+        bottom: 0;
+    }
+    .slider img{
+        width: 60%;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .contact-section .section-title{
+        top: -40px;
+        left: 25%;
+    }
+    footer h1{
+        font-size: 17px;
+    }
+    .project-vidbox{
+        min-width: 200px;
+    }
+
+    .menu-icon{
+        display: inline;
+    }
+    .card h1{
+        font-size: 25px;
+    }
+    .card p{
+        font-size: ;
+    }
+
 }

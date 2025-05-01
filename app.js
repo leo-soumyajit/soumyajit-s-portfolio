@@ -4,8 +4,10 @@ const video3 = document.getElementById('projectVideo3');
 
 const hoverSign = document.querySelector(".hover-sign");
 
-
-
+// sidebar elements
+const sidebar = document.querySelector('.sidebar');
+const menu = document.querySelector('.menu-icon');
+const close = document.querySelector('.close-icon');
 
 const videoList = [video1, video2, video3];
 videoList.forEach(function(video){
@@ -19,7 +21,18 @@ videoList.forEach(function(video){
     })
 })
 
+menu.addEventListener("click", function(){
+    sidebar.classList.remove("close-sidebar")
+    sidebar.classList.add("open-sidebar")
+})
 
-setTimeout(function() {
-    location.reload();
-}, 60000); // 60000 ms = 1 minute
+close.addEventListener("click", function(){
+    sidebar.classList.remove("open-sidebar")
+    sidebar.classList.add("close-sidebar")
+})
+
+
+
+// setTimeout(function() {
+//     location.reload();
+// }, 60000); // 60000 ms = 1 minute
