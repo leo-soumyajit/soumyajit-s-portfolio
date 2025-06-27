@@ -14,7 +14,7 @@
         <header>
             <div class="left">
                 <!-- <img src="images/miladicode.png" alt="logo"> -->
-                <h1>Soumya<span style="color: #008cff;">jit</span></h1>
+                <h3> < Soumyajit<span style="color: #008cff;">/Banerjee ></span></h3>
             </div>
             <ul>
                 <li><a href="#info">About</a></li>
@@ -24,15 +24,16 @@
             </ul>
 
             <div class="box-icon">
-                <a href="" id="linkedin"><i class='bx bxl-linkedin'></i></a>
-                <a href="" id="github"><i class='bx bxl-github' ></i></a>
-                <a href="" id="instagram"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.linkedin.com/in/soumyajit-banerjee-274b1229a/" id="linkedin"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/leo-soumyajit" id="github"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" id="instagram"><i class='bx bxl-instagram' ></i></a>
             </div>
 
             <div class="menu-icon">
                 <i class='bx bx-menu' ></i>
             </div>
         </header>
+
 
         <div id="loader">
             <h1 data-text="SOUMYAJIT">SOUMYAJIT</h1>
@@ -179,7 +180,8 @@
             </div>
         </section>
 
-        <section class="my-projects" id="projects">
+        <!-- Section with video -->
+        <!-- <section class="my-projects" id="projects">
             <h1 class="section-title autoDisplay">My Projects <picture>
                 <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.webp" type="image/webp">
                 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="32" height="32">
@@ -189,15 +191,12 @@
                 <div class="project-vidbox autoBlur">
                     <video id="projectVideo1" src="videos/project1.mp4"></video>
                     <div class="hover-sign">
-
                     </div>
                 </div>
                 <div class="project-info fadeInRight">
                     <h1>A Complete <span class="gradient">HotelBooking</span> and <span class="gradient">Management</span> Backend</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere est corporis dolorem, natus molestias neque hic iure iusto accusantium enim qui iste maiores aut excepturi aliquam saepe dolorum ullam accusamus!</p>
                     <button><i class='bx bx-link-external' ></i>Link</button>
-                    
-
                 </div>
             </div>
 
@@ -224,7 +223,101 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
+
+
+        <!-- Section with image -->
+         <section class="my-projects" id="projects">
+    <h1 class="section-title autoDisplay">My Projects <picture>
+        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.webp" type="image/webp">
+        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.gif" alt="🚀" width="32" height="32">
+      </picture>
+    </h1>
+
+    <div class="project-card">
+        <div class="project-vidbox autoBlur">
+            <img id="projectVideo1" src="ProjectsImages/hotelbooking.png" alt="Project 1">
+            <div class="hover-sign">
+            </div>
+        </div>
+        <div class="project-info fadeInRight">
+            <h1>A Complete <span class="gradient">HotelBooking</span> and <span class="gradient">Management</span> Backend</h1>
+            <p>Developed a comprehensive hotel booking and management backend using Spring Boot, featuring like user
+authentication, dynamic pricing, and secure payment integration (Stripe). Key modules include room inventory
+management, booking and cancellation system, guest management, minimum price display, role-based access
+control, and admin control dashboard.</p>
+                    <div class="tool-container">
+                        <span class="tool-tag">Spring Boot</span>
+                        <span class="tool-tag">PostgreSQL</span>
+                        <span class="tool-tag">Spring Security</span>
+                        <span class="tool-tag">Hibernate</span>
+                        <span class="tool-tag">Docker</span>
+                    </div>
+
+            <div class="projectButtons">
+                    <button><i class='bx bx-link-external' ></i>Link</button>
+                    <button onclick="window.open('https://github.com/leo-soumyajit/HotelBooking-Backend', '_blank')">
+                    <i class='bx bxl-github'></i> GitHub</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-vidbox autoBlur">
+            <img id="projectVideo2" src="ProjectsImages/HealthHub.png" alt="Project 2">
+        </div>
+        <div class="project-info fadeInRight">
+            <h1><span class="gradient">HealthHub</span>-"Smart, personalized meal planning for healthier living."</h1>
+            <p>Developed the backend for HealthHub, a AI powerd personalized meal planning platform with smart diet suggestions, daily reminders, and goal-based nutrition tracking. Enabled dynamic meal customization and active plan management through RESTful APIs.</p>
+            <div class="tool-container">
+            <span class="tool-tag">Spring Boot</span>
+            <span class="tool-tag">PostgreSQL</span>
+            <span class="tool-tag">Spring Security</span>
+            <span class="tool-tag">Hibernate</span>
+            <span class="tool-tag">JWT</span>
+            <span class="tool-tag">AI model</span>
+        </div>
+            
+            <div class="projectButtons">
+                    <button><i class='bx bx-link-external' ></i>Link</button>
+                    <button onclick="window.open('https://github.com/leo-soumyajit/HealthHub', '_blank')">
+                    <i class='bx bxl-github'></i> GitHub</button>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-vidbox autoBlur">
+            <img id="projectVideo3" src="ProjectsImages/Newsly.png" alt="Project 3">
+        </div>
+        <div class="project-info fadeInRight">
+            <h1><span class="gradient">Newsly</span>, A social based news blogging backend application</h1>
+            <p>Developed a scalable news social media backend using Spring Boot, supporting user authentication, post
+creation, likes/unlikes, and commenting features. Implemented secure access with Spring Security and managed
+data with MySQL and Hibernate.</p>
+            
+<div class="tool-container">
+            <span class="tool-tag">Spring Boot</span>
+            <span class="tool-tag">MySQL</span>
+            <span class="tool-tag">Spring Security</span>
+            <span class="tool-tag">Hibernate</span>
+            <span class="tool-tag">JWT</span>
+        </div>
+
+
+<div class="projectButtons">
+                    <button><i class='bx bx-link-external' ></i>Link</button>
+                    <button onclick="window.open('https://github.com/leo-soumyajit/NewsSocialMedia', '_blank')">
+                    <i class='bx bxl-github'></i> GitHub</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 
         <section class="myeducation autoDisplay" id="education">
             <h2>My Education <picture>

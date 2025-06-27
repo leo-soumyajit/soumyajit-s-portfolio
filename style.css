@@ -80,6 +80,41 @@ header ul a{
     /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
+
+/* Style the nav links */
+header ul li a {
+  position: relative;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect - color change */
+header ul li a:hover {
+  color: #00aaff;
+}
+
+/* Underline animation on hover */
+header ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #00aaff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+header ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+
 .box-icon{
     display: flex;
     gap: 40px;
@@ -391,7 +426,7 @@ header ul a{
 .project-card{
     display: flex;
     width: 100%;
-    height: 40%;
+    height: 60%;
     align-items: center;
     gap: 10%;
     justify-content: center;
@@ -423,6 +458,13 @@ header ul a{
 }
 
 
+.projectButtons{
+    display: flex;
+    flex-direction:row;
+    align-items: start;
+    gap: 17px;
+}
+
 .project-info{
     display: flex;
     flex-direction: column;
@@ -445,8 +487,8 @@ header ul a{
     width: 90%;
     max-width: 400px;
     min-width: 300px;
-    margin-bottom: 50px;
-    margin-top: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
     text-align: justify;
 
 }
@@ -505,6 +547,38 @@ header ul a{
     display: none;
 
 }
+
+.project-vidbox img {
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 0 10px lightgrey;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.tool-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px; /* smaller gap */
+  margin: 8px 0 4px 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+
+.tool-tag {
+  background-color: #1d3557;
+  color: #8ecae6;
+  padding: 4px 10px; /* reduced padding */
+  border-radius: 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1; /* prevent tall tags */
+  margin-bottom: 10px;
+}
+
+
+
 
 /* Skills */
 
@@ -977,7 +1051,11 @@ footer h1{
         margin-bottom: 300px;
 
     }
-    .project-vidbox video{
+    /* .project-vidbox video{
+        width: 250px;
+        margin-left: -100px;
+    } */
+    .project-vidbox img{
         width: 250px;
         margin-left: -100px;
     }
