@@ -559,23 +559,30 @@ header ul li a:hover::after {
 .tool-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px; /* smaller gap */
-  margin: 8px 0 4px 0;
+  gap: 7px;
+  margin: 20px 0 4px 0;
   padding: 0;
-  margin-top: 20px;
 }
-
 
 .tool-tag {
-  background-color: #1d3557;
-  color: #8ecae6;
-  padding: 4px 10px; /* reduced padding */
+  background-color: transparent;
+  padding: 4px;
   border-radius: 14px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1; /* prevent tall tags */
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
+
+.tool-tag img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  display: block;
+}
+
 
 
 
