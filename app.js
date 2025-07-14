@@ -63,6 +63,7 @@ function scrollToBottom() {
 
 function handleCommand(cmd) {
   const args = cmd.trim().toLowerCase().split(" ");
+  
   const command = args[0];
   const rest = args.slice(1);
 
@@ -76,10 +77,13 @@ function handleCommand(cmd) {
         <div>projects - Go to Projects section</div>
         <div>education - Go to Education section</div>
         <div>skills - Go to Skills section</div>
+        <div>resume - View/download resume</div>
+        <div>social [platform] - Open social links (github, linkedin, instagram)</div>
         <div>theme light | dark - Switch terminal theme</div>
         <div>clear - Clear the terminal</div>
         <div>exit - Close the terminal</div>
       `;
+      scrollToBottom()
       break;
 
     case 'about':
@@ -156,9 +160,41 @@ function handleCommand(cmd) {
       • <strong>IDE & Tools:</strong> Kafka, Android Studio, VS Code, IntelliJ IDEA, PyCharm, Postman, Swagger, GitHub
     </div>
   `;
+  scrollToBottom();
+    break;
+    
+
+    case 'resume':
+    window.open('Resume/RESUME SOUMYAJIT (1).pdf', '_blank');
+    terminalOutput.innerHTML += `<div>📄 Opening resume in new tab...</div>`;
+    scrollToBottom();
+    break;
 
 
-  break;
+
+    case 'social': {
+    const platform = rest[0];  // ✅ this gives 'github', 'linkedin', etc.
+
+    const socialLinks = {
+      github: 'https://github.com/leo-soumyajit',
+      linkedin: 'https://www.linkedin.com/in/soumyajit-banerjee-274b1229a/',
+      instagram: 'https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1'
+    };
+
+    if (platform && socialLinks[platform]) {
+      terminalOutput.innerHTML += `<div>🔗 Opening ${platform}...</div>`;
+      window.open(socialLinks[platform], '_blank');
+    } else {
+      terminalOutput.innerHTML += `<div>❌ Unknown platform. Try: github, linkedin, instagram</div>`;
+    }
+
+    scrollToBottom();
+    break;
+  }
+
+
+
+
 
 
     case 'theme':
@@ -179,12 +215,14 @@ function handleCommand(cmd) {
       terminalOverlay.classList.remove('show');
       terminalOutput.innerHTML += `<div> Goodbye! 👋</div>`;
       terminalWrapper.classList.add('hidden');
+      scrollToBottom();
       break;
 
       
 
    case 'clear':
     terminalOutput.innerHTML = '';
+    
     break;
 
 
