@@ -1605,3 +1605,24 @@ footer h1{
 #terminal-overlay.show {
   animation: terminalFadeIn 0.4s ease-out;
 }
+
+
+#musicBtn {
+      /* font-size: 40px; */
+      border: none;
+      background: none;
+      cursor: pointer;
+      outline: none;
+      animation-duration: 0.6s;
+      transition: transform 0.2s ease;
+    }
+
+    .pulse {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }

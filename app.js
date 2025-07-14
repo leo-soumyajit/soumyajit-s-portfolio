@@ -301,3 +301,25 @@ document.addEventListener('keydown', (e) => {
     terminalWrapper.classList.add('hidden');
   }
 });
+
+
+// music add
+
+const audio = new Audio('Music/blinding_lights.mp3');
+    audio.loop = true;
+
+    const musicBtn = document.getElementById('musicBtn');
+    let isPlaying = false;
+
+    musicBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        audio.play();
+        musicBtn.textContent = '🎵'; // Animated note
+        musicBtn.classList.add('pulse');
+      } else {
+        audio.pause();
+        musicBtn.textContent = '⏸️'; // Pause emoji
+        musicBtn.classList.remove('pulse');
+      }
+      isPlaying = !isPlaying;
+    });
