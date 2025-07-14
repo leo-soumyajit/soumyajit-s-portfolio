@@ -79,9 +79,11 @@ function handleCommand(cmd) {
         <div>skills - Go to Skills section</div>
         <div>resume - View/download resume</div>
         <div>social [platform] - Open social links (github, linkedin, instagram)</div>
+        <div>echo [message] - Prints a custom message to the terminal</div>
         <div>theme light | dark - Switch terminal theme</div>
         <div>clear - Clear the terminal</div>
         <div>exit - Close the terminal</div>
+        
       `;
       scrollToBottom()
       break;
@@ -217,6 +219,19 @@ function handleCommand(cmd) {
       terminalWrapper.classList.add('hidden');
       scrollToBottom();
       break;
+
+
+        case 'echo': {
+            if (rest.length === 0) {
+                terminalOutput.innerHTML += `<div>⚠️  Usage: echo [your message]</div>`;
+            } else {
+                const message = rest.join(" ");
+                terminalOutput.innerHTML += `<div>${message}</div>`;
+            }
+            scrollToBottom();
+            break;
+        }
+
 
       
 
