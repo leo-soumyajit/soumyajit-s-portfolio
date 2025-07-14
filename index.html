@@ -12,27 +12,58 @@
     <div class="container">
         <video class="back-vid" muted loop autoplay plays-inline  src="videos/galaxy.mp4" type="video/mp4"></video>
         <header>
-            <div class="left">
-                <!-- <img src="images/miladicode.png" alt="logo"> -->
-                <h3> < Soumyajit<span style="color: #008cff;">/Banerjee ></span></h3>
-            </div>
-            <ul>
-                <li><a href="#info">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">My Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
+  <div class="left">
+    <!-- <img src="images/miladicode.png" alt="logo"> -->
+    <h3>&lt; Soumyajit<span style="color: #008cff;">/Banerjee &gt;</span></h3>
+  </div>
+  <ul>
+    <li><a href="#info">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">My Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
 
-            <div class="box-icon">
-                <a href="https://www.linkedin.com/in/soumyajit-banerjee-274b1229a/" id="linkedin"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/leo-soumyajit" id="github"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" id="instagram"><i class='bx bxl-instagram' ></i></a>
-            </div>
+  <div class="box-icon">
+    <a href="https://www.linkedin.com/in/soumyajit-banerjee-274b1229a/" id="linkedin"><i class='bx bxl-linkedin'></i></a>
+    <a href="https://github.com/leo-soumyajit" id="github"><i class='bx bxl-github'></i></a>
+    <a href="https://www.instagram.com/leo_soumyajit?igsh=N3IxcW05ejdwanE1" id="instagram"><i class='bx bxl-instagram'></i></a>
+  </div>
 
-            <div class="menu-icon">
-                <i class='bx bx-menu' ></i>
-            </div>
-        </header>
+  <div class="menu-icon">
+    <i class='bx bx-menu'></i>
+  </div>
+</header>
+
+
+        <!-- Terminal Overlay -->
+<div id="terminal-overlay">
+  <div id="terminal-wrapper" class="hidden">
+    <div id="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">soumyajit@portfolio:~</span>
+    </div>
+    <div id="terminal-body">
+      <div id="terminal-output">
+        <div>Welcome to Soumyajit's Interactive Terminal!</div>
+        <div>__________________________________________</div>
+        <br />
+        <div>Type 'help' to see available commands.</div>
+        <div>Type 'about', 'projects', 'education', 'skills'</div>
+        <div>Type 'theme light' or 'theme dark' to change the theme.</div>
+        <br />
+      </div>
+                <div id="input-line">
+                    <span class="prompt">soumyajit@portfolio:~$</span>
+                    <div class="input-container">
+                <input type="text" id="terminal-input" autofocus />
+                </div>
+                </div>
+
+    </div>
+  </div>
+</div>
 
 
         <div id="loader">
@@ -52,8 +83,13 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">My Education</a></li>
                 <li><a href="#skills">Skills</a></li>
+
+                
                 
             </ul>
+
+                
+
 
             <div class="social-icons">
                 <a href="" id="linkedin"><i class='bx bxl-linkedin'></i></a>
@@ -67,8 +103,6 @@
         </div>
         <section class="hero" id="hero">
             
-
-
 
             <div class="hero-info autoBlur">
                 <div class="hero-info-title">
@@ -133,7 +167,16 @@
                 <p>I am 2nd year Information Technology student from Haldia Institute of Technology.
                     I have currently skilled up myself in Java Spring Boot Development.</p>
 
+            <div style="display: inline-flex;"">
                 <button><i class='bx bx-send' ></i>Contact Me</button>
+                <!-- 🔻 Terminal Button Added Here -->
+                <div class="terminal-toggle">
+                    <button id="open-terminal" style="padding: 15px 35px;"><i class='bx bx-terminal'></i> Terminal</button>
+                </div>
+            </div>
+                
+
+                
             </div>
 
             <div class="hero-vid-box">

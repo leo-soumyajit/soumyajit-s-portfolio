@@ -1438,3 +1438,153 @@ footer h1{
     }
   }
   
+
+
+  /* Terminal code */
+  #terminal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#terminal-overlay.show {
+  display: flex;
+}
+
+#terminal-wrapper {
+  --bg: #000;
+  --text: #eee;
+  --prompt: #f00;
+  --terminal-border: #333;
+  --font: 'Fira Code', monospace;
+
+  width: 80%;
+  height: 80%;
+  border: 1px solid var(--terminal-border);
+  border-radius: 10px;
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+#terminal-wrapper.light {
+  --bg: #f0f0f0;
+  --text: #222;
+  --prompt: #007acc;
+  --terminal-border: #ccc;
+}
+
+#terminal-header {
+  padding: 8px 12px;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid var(--terminal-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#terminal-wrapper.light #terminal-header {
+  background-color: #e0e0e0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.red {
+  background-color: #ff5f56;
+}
+.yellow {
+  background-color: #ffbd2e;
+}
+.green {
+  background-color: #27c93f;
+}
+.title {
+  margin-left: auto;
+  font-weight: bold;
+  color: #ccc;
+}
+
+#terminal-body {
+  padding: 16px;
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+#terminal-output {
+  white-space: pre-wrap;
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+
+.prompt {
+  color: var(--prompt);
+  font-family: var(--font);
+  font-size: 1em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+
+
+#terminal-output {
+  white-space: inherit;
+  line-height: 1.4; 
+  margin:0;
+  padding: 0;
+}
+
+#terminal-wrapper.hidden {
+  display: none;
+}
+
+#open-terminal {
+  background: none;
+  color: white;
+  border: 1px solid #008cff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  margin-left: 10px;
+}
+
+#open-terminal:hover {
+  background: #008cff;
+  color: white;
+}
+#terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  width: 100%;
+  font-family: var(--font);
+  font-size: 1em;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
