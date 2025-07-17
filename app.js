@@ -76,7 +76,9 @@ function handleCommand(cmd) {
         <div>about - Go to About section</div>
         <div>projects - Go to Projects section</div>
         <div>education - Go to Education section</div>
+        <div>experience - Go to work experience section</div>
         <div>skills - Go to Skills section</div>
+        <div>contact - For contact with me</div>
         <div>resume - View/download resume</div>
         <div>social [platform] - Open social links (github, linkedin, instagram)</div>
         <div>echo [message] - Prints a custom message to the terminal</div>
@@ -143,7 +145,32 @@ function handleCommand(cmd) {
 
   break;
 
+// work-experience-section
 
+
+case 'experience':
+  scrollToSection('experience');
+  terminalOutput.innerHTML += `
+    <div>
+      <strong style="color:#00bfff;">Work Experience:</strong><br>
+      <span style="color:#00bfff;">━━━━━━━━━━━━━━━</span><br><br>
+
+      • <strong>Backend Developer</strong><br>
+      International Society of Automation, HIT Student Chapter<br>
+      <em>2023 – Present</em><br>
+      - Building backend systems using Spring Boot and PostgreSQL.<br>
+      - Integrated secure authentication and database connectivity to support member registration and event management features.<br><br>
+
+      • <strong>Java Developer Intern</strong><br>
+      AICTE Oasis Infobyte Internship<br>
+      <em>June – August 2025</em><br>
+      - Created a full-featured Online Exam Portal backend using Spring Boot and JWT Auth.<br>
+      - Implemented exam creation, auto submission, student flow, and admin panel APIs.
+    </div>
+  `;
+  scrollToBottom();
+
+  break;
 
 
 
@@ -164,6 +191,22 @@ function handleCommand(cmd) {
   `;
   scrollToBottom();
     break;
+    
+
+    case 'contact':
+  scrollToSection('contact');
+  terminalOutput.innerHTML += `
+    <div>
+      <strong style="color:#00bfff;">Contact Information:</strong><br>
+      <span style="color:#00bfff;">━━━━━━━━━━━━━━━━━━━━━━</span><br><br>
+
+      • <strong>Phone:</strong> 7908288829<br>
+      • <strong>Email:</strong> banerjeesoumyajit2005@gmail.com
+    </div>
+  `;
+  scrollToBottom();
+  break;
+
     
 
     case 'resume':
@@ -323,3 +366,26 @@ const audio = new Audio('Music/blinding_lights.mp3');
       }
       isPlaying = !isPlaying;
     });
+
+
+
+
+    // Expeirence section
+ const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const content = entry.target;
+    const line = content.previousElementSibling?.querySelector(".animated-line");
+
+    if (entry.isIntersecting) {
+      content.classList.add("visible");
+      if (line) line.classList.add("grow");
+    } else {
+      content.classList.remove("visible");
+      if (line) line.classList.remove("grow");
+    }
+  });
+}, {
+  threshold: 0.3,
+});
+
+document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));

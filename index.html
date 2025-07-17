@@ -6,6 +6,7 @@
     <title>Soumyajit's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -22,7 +23,7 @@
   <ul>
     <li><a href="#info">About</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#education">My Education</a></li>
+    <li><a href="#experience">Work Experience</a></li>
     <li><a href="#skills">Skills</a></li>
   </ul>
   
@@ -86,7 +87,7 @@
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#info">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">My Education</a></li>
+                <li><a href="#experience">Work Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
             
@@ -456,9 +457,9 @@ control, and admin control dashboard.</p>
 
 
 
+<!-- Education -->
 
-
-        <section class="myeducation autoDisplay" id="education">
+        <!-- <section class="myeducation autoDisplay" id="education">
             <h2>My Education <picture>
                 <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.webp" type="image/webp">
                 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.gif" alt="🎓" width="32" height="32">
@@ -489,11 +490,81 @@ control, and admin control dashboard.</p>
                   <h3>Certifications</h3>
                   <p>Java NPTEL ONLINE Certification</p>
                   <!-- <p>Java, SpringBoot, AWS, Docker, Kubernetes.</p> -->
-                </div>
+                <!-- </div>
               </div>
             </div>
-          </section>
+          </section> -->
           
+<!-- Education end -->
+
+          <!-- Testnomial -->
+
+
+
+          <!-- end  -->
+
+
+
+          <!-- Exp section -->
+
+<section class="work-experience-section" id="experience">
+    <h2 class="section-title autoDisplay">Work Experience <picture>
+  <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4aa_1f3fb/512.webp" type="image/webp">
+  <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4aa_1f3fb/512.gif" alt="💪" width="32" height="32">
+</picture></h2>
+    <div class="timeline">
+
+      <!-- Experience 1 -->
+      <div class="timeline-item">
+        <div class="timeline-point">
+          <div class="dott"></div>
+          <div class="line animated-line"></div>
+        </div>
+        <div class="timeline-content fade-in">
+          <div class="left-column">
+            <h3 class="date">2023–Present</h3>
+            <p class="role">Backend Developer</p>
+            <p class="org">International Society of Automation<br>HIT Student Chapter</p>
+          </div>
+          <div class="right-column">
+            <p>As a Backend Developer at the International Society of Automation, HIT Student Chapter, I specialize in building scalable server-side applications using Spring Boot.</p>
+            <p>Collaborated on developing RESTful APIs and backend logic for various chapter initiatives, ensuring efficient data handling and robust architecture.</p>
+            <p>Integrated secure authentication and database connectivity to support member registration and event management features.</p>
+            <p>Actively contribute to system design discussions and backend planning to align with team goals and automation workflows.</p>
+        </div>
+        </div>
+      </div>
+
+      <!-- Experience 2 -->
+      <div class="timeline-item " >
+        <div class="timeline-point">
+          <div class="dott"></div>
+          <div class="line animated-line"></div>
+        </div>
+        <div class="timeline-content fade-in">
+          <div class="left-column">
+            <h3 class="date">June-Auguest 2025</h3>
+            <p class="role">Java Developer Intern</p>
+            <p class="org">AICTE Oasis Infobyte</p>
+          </div>
+          <div class="right-column">
+                <p>Developed a robust backend system for an <strong>Online Exam Portal</strong> as part of my internship at <strong>AICTE Oasis Infobyte</strong>.</p>
+                <p>The platform supports end-to-end exam management, enabling secure student participation and admin-level control using <strong>Spring Boot</strong>, <strong>PostgreSQL</strong>, and <strong>JWT Authentication</strong>.</p>
+                <ul>
+                    <li>✅ Designed and implemented RESTful APIs following MVC architecture and monolithic structure for simplicity and maintainability.</li>
+                    <li>✅ Built exam lifecycle features including live answering, timed auto-submission, and manual submission support.</li>
+                    <li>✅ Integrated admin features such as exam creation, question upload, student registration, and result viewing.</li>
+                    <li>✅ Used tools like Postman for API testing and Swagger for automated documentation.</li>
+                    <li>✅ Gained hands-on experience in Spring Data JPA, Hibernate, and version control via Git.</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+          <!-- End -->
 
 
 
@@ -555,7 +626,7 @@ control, and admin control dashboard.</p>
         </section>
 
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h1 class="section-title autoDisplay">Get in Touch <picture>
                 <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f41d/512.webp" type="image/webp">
                 <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f41d/512.gif" alt="🐝" width="32" height="32">
@@ -574,16 +645,31 @@ control, and admin control dashboard.</p>
             
 
             <div class="contact-box autoBlur">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus vel hic alias laudantium quisquam ab cupiditate obcaecati fugiat, sit omnis maxime voluptates, eaque, delectus magnam quae dignissimos aliquid sed ad!</p>
-                <p>Full Name</p>
-                <input type="text" placeholder="Your Full Name">
-                <p>Email Address</p>
-                <input type="text" placeholder="Your Email">
-                <p>Your Message</p>
-                <input class="input-message" type="text" placeholder="Share your thoughts">
-                <button><i class='bx bx-send' ></i>Send Message</button>
+              <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="c0fdb95b-0108-4f03-8f53-b4d7cafc526f">
+  <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+  <input type="hidden" name="from_name" value="Soumyajit's Portfolio" />
+
+  <p>Full Name</p>
+  <input type="text" name="name" placeholder="Your Full Name" required>
+
+  <p>Email Address</p>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <p>Your Message</p>
+  <input class="input-message" type="text" name="message" placeholder="Share your thoughts" required>
+
+  <button type="submit"><i class='bx bx-send'></i>Send Message</button>
+</form>
+
             </div>
         </section>
+
+
+
+        
+
+
 
         <footer>
             <h1>© 2025 <picture>
